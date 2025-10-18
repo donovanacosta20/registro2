@@ -1,0 +1,14 @@
+.container {
+  max-width: 960px;
+}
+
+#btnTerminos.no-valid {
+    color: #dc3545;
+}
+#btnTerminos.valid {
+    color: #0d6efd;
+}
+
+#errorTerminos {
+    width: fit-content;
+}
