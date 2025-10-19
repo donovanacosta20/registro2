@@ -34,14 +34,16 @@ function passwordValidate(password1, password2) {
 
 checkTerminos.addEventListener('change', (event) => {
     if (event.target.checked) {
-        checkTerminos.classList.remove('is-invalid')
-        checkTerminos.classList.add('is-valid')
-        errorTerminos.style.display = 'none'
-        btnTerminos.classList.add('valid')
+        checkTerminos.classList.remove('is-invalid');
+        checkTerminos.classList.add('is-valid');
+        errorTerminos.style.display = 'none';
+        btnTerminos.classList.add('valid');
+        btnTerminos.classList.remove('no-valid');
     } else {
-        checkTerminos.classList.remove('is-valid')
-        checkTerminos.classList.add('is-invalid')
-        errorTerminos.style.display = 'block'
-        btnTerminos.classList.add('no-valid')
+        checkTerminos.classList.remove('is-valid');
+        checkTerminos.classList.add('is-invalid');
+        errorTerminos.style.display = 'block';
+        btnTerminos.classList.add('no-valid');
+        btnTerminos.classList.remove('valid');
     }
 })
